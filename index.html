@@ -234,7 +234,7 @@ line-height: 1.7;
 .hero {
 background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, #9b2fa6 100%);
 position: relative;
-overflow: hidden;
+overflow: visible;
 padding: 100px 5% 80px;
 min-height: 90vh;
 display: flex;
@@ -1022,8 +1022,10 @@ transition: background 0.2s;
 <!-- ===== NAVIGATION ===== -->
 <nav>
 <a class="nav-logo" onclick="showPage('home')">
-<div class="nav-logo-icon">🚀</div>
-<span class="nav-logo-text">Tender<span>Devs</span></span>
+<div class="nav-logo-icon" style="background:none;padding:0">
+  <img src="android-chrome-192x192.png" alt="TenderDevs" style="width:42px;height:42px;object-fit:contain;border-radius:12px">
+</div>
+  <span class="nav-logo-text">Tender<span>Devs</span></span>
 </a>
 <ul class="nav-links">
 <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
@@ -1078,7 +1080,7 @@ We don't just teach kids to code — we teach them to think, create, and build t
 </div>
 <div class="hero-visual">
 <div class="hero-img-main">
-<img src="https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=800&q=80" alt="alt="Kids learning to code in a live TenderDevs virtual class Nigeria"" onerror="this.style.display='none'">
+<img src="https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=800&q=80" alt="Kids learning to code in a live TenderDevs virtual class Nigeria" onerror="this.style.display='none'">
 <!-- Fallback visual if image fails -->
           <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px;">
             <div style="font-size:80px">👩‍💻</div>
@@ -1791,8 +1793,9 @@ Founded
 <div class="footer-inner">
 <div class="footer-brand">
 <div class="nav-logo" style="cursor:default">
-<div class="nav-logo-icon">🚀</div>
-<span class="nav-logo-text" style="color:white">Tender<span>Devs</span></span>
+<div class="nav-logo-icon" style="background:none;padding:0">
+  <img src="android-chrome-192x192.png" alt="TenderDevs" style="width:42px;height:42px;object-fit:contain;border-radius:12px">
+</div><span class="nav-logo-text" style="color:white">Tender<span>Devs</span></span>
 </div>
 <p>Empowering the next generation of tech leaders through live, mentor-led coding education. STEM-accredited, project-based, and built for curious minds aged 7–16.</p>
 </div>
